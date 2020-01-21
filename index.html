@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Oswald&display=swap' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+    }
+  </style>
+
+  <title>TypeScript Fun Time</title>
+</head>
+
+<script src="game.js"></script>
+
+<div id="container">
+  <h1>tic tac toe</h1>
+
+  <h3>
+    o wins: <p class="text" id="o_win">0</p>
+    | | x wins: <p class="text" id="x_win">0</p>
+    | | ties: <p class="text" id="ties">0</p>
+    | | total: <p class="text" id="total">0</p>
+  </h3>
+
+  <h2>
+    turns:
+    <p class="text" id="count">0</p class="text">
+  </h2>
+
+  <div id="starter">
+    <p>Who starts?</p>
+    <button class="assets" id="o" onclick="startGame(this.id);">o</button>
+    <button class="assets" id="x" onclick="startGame(this.id);">x</button>
+  </div>
+
+  <div id="game">
+    <h3 id="turn">o starts</h3>
+    <br>
+    <div id="grid">
+      <button class="btn" id="one" onclick="drawOnGrid(this.id);">-</button>
+      <button class="btn" id="two" onclick="drawOnGrid(this.id);">-</button>
+      <button class="btn" id="three" onclick="drawOnGrid(this.id);">-</button>
+      <br />
+      <button class="btn" id="four" onclick="drawOnGrid(this.id);">-</button>
+      <button class="btn" id="five" onclick="drawOnGrid(this.id);">-</button>
+      <button class="btn" id="six" onclick="drawOnGrid(this.id);">-</button>
+      <br />
+      <button class="btn" id="seven" onclick="drawOnGrid(this.id);">-</button>
+      <button class="btn" id="eight" onclick="drawOnGrid(this.id);">-</button>
+      <button class="btn" id="nine" onclick="drawOnGrid(this.id);">-</button>
+    </div>
+  </div>
+
+  <h3 id="win"></h3>
+
+  <button class="assets" id="restart" onclick="clearGrid();">restart</button>
+  <br>
+  <button class="assets" id="reset" onclick="window.location.reload();">reset</button>
+</div>
+</body>
+
+</html>

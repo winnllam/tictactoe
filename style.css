@@ -1,0 +1,126 @@
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 6px;
+  padding: 0;
+}
+
+p {
+  margin: 5px;
+  padding: 0;
+}
+
+#container {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.text {
+  display: inline-block;
+}
+
+#starter {
+  display: block;
+}
+
+#game {
+  display: none;
+}
+
+.assets {
+  background-color: white;
+  border: black solid 1.45px;
+  color: black;
+  min-width: 30px;
+  min-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  transition: .5s;
+}
+
+.assets:hover {
+  background-color: black;
+  color: white;
+}
+
+#restart {
+  display: none;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+#reset {
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+#grid {
+  width: 320px;
+  height: auto;
+  margin: auto;
+}
+
+.btn {
+  background-color: white;
+  border: white solid 1.45px;
+  color: white;
+  width: 75px;
+  height: 75px;
+  padding: 20px 25px;
+  margin: 4px 2.3px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#one {
+  border-right: black solid 1.45px;
+  border-bottom: black solid 1.45px;
+}
+
+#two {
+  border-left: black solid 1.45px;
+  border-right: black solid 1.45px;
+  border-bottom: black solid 1.45px;
+}
+
+#three {
+  border-left: black solid 1.45px;
+  border-bottom: black solid 1.45px;
+}
+
+#four {
+  border-top: black solid 1.45px;
+  border-right: black solid 1.45px;
+  border-bottom: black solid 1.45px;
+}
+
+#five {
+  border: black solid 1.45px;
+}
+
+#six {
+  border-top: black solid 1.45px;
+  border-left: black solid 1.45px;
+  border-bottom: black solid 1.45px;
+}
+
+#seven {
+  border-top: black solid 1.45px;
+  border-right: black solid 1.45px;
+}
+
+#eight {
+  border-left: black solid 1.45px;
+  border-right: black solid 1.45px;
+  border-top: black solid 1.45px;
+}
+
+#nine {
+  border-left: black solid 1.45px;
+  border-top: black solid 1.45px;
+}
