@@ -1,20 +1,24 @@
 const http = require('http');
 const port = process.env.PORT || 3000
-let fs = require('fs');
+const url = require('url');
+const fs = require('fs');
 
 const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
+  var pathname = url.parse(req.url).pathname;
+  res.writeHead(200);
 
-  fs.readFile('./index.html', null, function(error, data) {
-    if (error) {
-      res.writeHead(404);
-      res.write('Whoops! File not found!');
-    } else {
-      res.write(data);
-    }
-    res.end();
-  });
+  if (pathname == "/") {
+    html = fs.readFileSync("index.html", "utf8");
+    res.write(html);
+  } else if (pathname == "/game.js") {
+    script = fs.readFileSync("game.js", "utf8");
+    res.write(script);
+  } else if (pathname == "/style.css") {
+    style = fs.readFileSync("style.css", "utf8");
+    res.write(style);
+  }
+
+  res.end();
 });
 
 server.listen(port, () => {
